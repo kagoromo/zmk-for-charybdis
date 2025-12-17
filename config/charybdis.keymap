@@ -36,6 +36,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        mlt: mouse_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&mkp>;
+        };
     };
 
     keymap {
@@ -48,7 +56,7 @@ XXX             &kp Q           &kp W           &kp E           &kp R           
 XXX             &hm LGUI A      &hm LALT S      &hm LCTRL D     &hm LSHFT F     &kp G           &kp H           &hm RSHFT J     &hm RCTRL K    &hm LALT L      &hm RGUI P       XXX
 XXX             &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA      &kp DOT         &kp FSLH         XXX
                                                 &lt FN ESC      &lt NUM SPACE   &lt SYM TAB     &lt MOUSE RET    &lt NAV BSPC
-                                                &mkp LCLK       &mkp RCLK                       &lt MEDIA DEL
+                                        &mlt SCROLL LCLK  &mlt SNIPE RCLK                       &lt MEDIA DEL
             >;
         };
 
