@@ -55,8 +55,8 @@ XXX             XXX             XXX             XXX             XXX             
 XXX             &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I          &kp O           &kp SQT          XXX
 XXX             &hm LGUI A      &hm LALT S      &hm LCTRL D     &hm LSHFT F     &kp G           &kp H           &hm RSHFT J     &hm RCTRL K    &hm LALT L      &hm RGUI P       XXX
 XXX             &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA      &kp DOT         &kp FSLH         XXX
-                                                &lt FN ESC      &lt NUM SPACE   &lt SYM TAB     &lt MOUSE RET    &lt NAV BSPC
-                                        &mlt SCROLL LCLK  &mlt SNIPE RCLK                       &lt MEDIA DEL
+                                                &lt FN ESC      &lt NUM SPACE   &lt SYM TAB     &lt NAV BSPC    &lt MEDIA DEL
+                                        &mlt SCROLL LCLK  &mlt SNIPE RCLK                       &lt MOUSE RET
             >;
         };
 
@@ -66,8 +66,8 @@ XXX             XXX             XXX             XXX             XXX             
 XXX             &kp Q           &kp W           &kp F           &kp P           &kp B           &kp J           &kp L           &kp U           &kp Y           &kp SQT         XXX
 XXX             &hm LGUI A      &hm LALT R      &hm LCTRL S     &hm LSHFT T     &kp G           &kp M           &hm RSHFT N     &hm RCTRL E     &hm LALT I      &hm RGUI O      XXX
 XXX             &kp Z           &kp X           &kp C           &kp D           &kp V           &kp K           &kp H           &kp COMMA       &kp DOT         &kp FSLH        XXX
-                                                &lt FN ESC      &lt NUM SPACE   &lt SYM TAB     &lt MOUSE RET    &lt NAV BSPC
-                                                &mkp LCLK       &mkp RCLK                       &lt MEDIA DEL
+                                                &lt FN ESC      &lt NUM SPACE   &lt SYM TAB     &lt NAV BSPC    &lt MEDIA DEL
+                                                &mkp LCLK       &mkp RCLK                       &lt MOUSE RET
             >;
         };
 
@@ -110,8 +110,8 @@ XXX             XXX             XXX             XXX             XXX             
 XXX             &mo SCROLL      &mkp MCLK       &mkp LCLK       &mkp RCLK       XXX             &kp LBKT        &kp N7          &kp N8          &kp N9          &kp RBKT        XXX
 XXX             &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       XXX             &kp EQUAL       &kp N4          &kp N5          &kp N6          &kp SEMI        XXX
 XXX             &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(Y)       &kp BSLH        &kp N1          &kp N2          &kp N3          &kp GRAVE       XXX
-                                                ___             ___             ___             &kp MINUS          &kp N0
-                                                ___             ___                             &kp DOT
+                                                ___             ___             ___             &kp N0          &kp DOT
+                                                ___             ___                             &kp MINUS
             >;
         };
 
@@ -143,8 +143,8 @@ XXX             XXX             XXX             XXX             XXX             
 &kp LSHFT       &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp SQT         XXX
 &kp LALT        &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &hm RSHIFT J    &hm LCTRL K     &hm LALT L      &hm LGUI P      XXX
 &kp LCTRL       &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        XXX
-                                                &lt FN ESC      &kp SPACE       &kp TAB         &kp RET         &kp BSPC
-                                                ___             ___                             &lt SYS DEL
+                                                &lt FN ESC      &kp SPACE       &kp TAB         &kp BSPC        &lt SYS DEL
+                                                ___             ___                             &kp RET
             >;
         };
 
