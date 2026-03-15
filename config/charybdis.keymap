@@ -204,6 +204,11 @@
             key-positions = <LH0 RH0>;
             bindings = <&tog SYS>;
         };
+        combo_sys2 {
+            timeout-ms = <50>;
+            key-positions = <LT4 RT4>;
+            bindings = <&tog SYS>;
+        };
         combo_lpar {
             timeout-ms = <50>;
             key-positions = <RM1 RM2>;
@@ -246,7 +251,7 @@ XXX             &kp Q           &kp W           &kp E           &kp R           
 XXX             &hml LGUI A     &hml LALT S     &hml LCTRL D    &hml LSHFT F    &kp G           &kp H           &hmr RSHFT J    &hmr RCTRL K   &hmr LALT L     &hmr RGUI P      XXX
 XXX             &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA      &kp DOT         &kp FSLH         XXX
                                                 &lt FN ESC      &lt NUM SPACE   &lt SYM TAB     &lt MEDIA RET   &lt NAV BSPC
-                                                &mlt SCROLL LCLK  &mlt SNIPE RCLK               XXX
+                                              &mlt SCROLL LCLK  &mlt SNIPE RCLK                 XXX
             >;
         };
 
