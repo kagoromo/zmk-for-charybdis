@@ -116,9 +116,11 @@
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        tri_layer {
+        tri_layer_right {
             if-layers = <MEDIA NAV>;
             then-layer = <SYS>;
+        };
+        tri_layer_left {
             if-layers = <SYM NUM>;
             then-layer = <SYS>;
         };
@@ -144,24 +146,18 @@
         lpar_ht: lpar_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            require-prior-idle-ms = <150>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&lpar_hold_macro>, <&kp>;
-            hold-trigger-key-positions = < KEYS_L THUMBS >; // List of keys on the left side of the keyboard
-            hold-trigger-on-release;
         };
         rpar_ht: rpar_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            require-prior-idle-ms = <150>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&rpar_hold_macro>, <&kp>;
-            hold-trigger-key-positions = < KEYS_L THUMBS >; // List of keys on the left side of the keyboard
-            hold-trigger-on-release;
         };
         lpar_hold_macro: lpar_hold_macro {
             compatible = "zmk,behavior-macro";
@@ -189,65 +185,76 @@
         compatible = "zmk,combos";
         combo_caps_word {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             key-positions = <LM1 RM1>;
             bindings = <&caps_word>;
         };
         combo_bspc {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             layers = <BASE CMAK>;
             key-positions = <RT1 RT2>;
             bindings = <&kp BSPC>;
         };
         combo_del {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             layers = <BASE CMAK>;
             key-positions = <RT2 RT3>;
             bindings = <&kp DEL>;
         };
         combo_lpar {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             layers = <BASE CMAK>;
             key-positions = <RM1 RM2>;
-            bindings = <&kp LPAR>;
+            bindings = <&lpar_ht 0 LPAR>;
         };
         combo_rpar {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             layers = <BASE CMAK>;
             key-positions = <RM2 RM3>;
-            bindings = <&kp RPAR>;
+            bindings = <&rpar_ht 0 RPAR>;
         };
         combo_lessthan {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             layers = <NUM>;
             key-positions = <RM1 RM2>;
             bindings = <&kp LT>;
         };
         combo_greaterthan {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             layers = <NUM>;
             key-positions = <RM2 RM3>;
             bindings = <&kp GT>;
         };
         combo_lbkt {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             layers = <BASE CMAK>;
             key-positions = <RB1 RB2>;
             bindings = <&kp LBKT>;
         };
         combo_rbkt {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             layers = <BASE CMAK>;
             key-positions = <RB2 RB3>;
             bindings = <&kp RBKT>;
         };
         combo_lbrc {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             layers = <NUM>;
             key-positions = <RB1 RB2>;
             bindings = <&kp LBRC>;
         };
         combo_rbrc {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             layers = <NUM>;
             key-positions = <RB2 RB3>;
             bindings = <&kp RBRC>;
