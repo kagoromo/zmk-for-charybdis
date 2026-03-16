@@ -211,28 +211,107 @@
             key-positions = <LT4 RT4>;
             bindings = <&tog_sys>;
         };
+        combo_test1 {
+            timeout-ms = <50>;
+            key-positions = <LT4 48>;
+            bindings = <&kp 1>;
+        };
+        combo_test2 {
+            timeout-ms = <50>;
+            key-positions = <LT4 49>;
+            bindings = <&kp 2>;
+        };
+        combo_test3 {
+            timeout-ms = <50>;
+            key-positions = <LT4 50>;
+            bindings = <&kp 3>;
+        };
+        combo_test4 {
+            timeout-ms = <50>;
+            key-positions = <LT4 51>;
+            bindings = <&kp 4>;
+        };
+        combo_test5 {
+            timeout-ms = <50>;
+            key-positions = <LT4 52>;
+            bindings = <&kp 5>;
+        };
+        combo_test6 {
+            timeout-ms = <50>;
+            key-positions = <LT4 53>;
+            bindings = <&kp 6>;
+        };
+        combo_test7 {
+            timeout-ms = <50>;
+            key-positions = <LT4 54>;
+            bindings = <&kp 7>;
+        };
+        combo_test8 {
+            timeout-ms = <50>;
+            key-positions = <LT4 55>;
+            bindings = <&kp 8>;
+        };
+        combo_test9 {
+            timeout-ms = <50>;
+            key-positions = <LT4 56>;
+            bindings = <&kp 9>;
+        };
+        combo_test10 {
+            timeout-ms = <50>;
+            key-positions = <LT4 57>;
+            bindings = <&kp 1 &kp 0>;
+        };
+        combo_test11 {
+            timeout-ms = <50>;
+            key-positions = <LT4 58>;
+            bindings = <&kp 1 &kp 1>;
+        };
+        combo_bspc {
+            timeout-ms = <50>;
+            layers = <BASE CMAK>;
+            key-positions = <RT1 RT2>;
+            bindings = <&kp BSPC>;
+        };
+        combo_del {
+            timeout-ms = <50>;
+            layers = <BASE CMAK>;
+            key-positions = <RT2 RT3>;
+            bindings = <&kp DEL>;
+        };
         combo_lpar {
             timeout-ms = <50>;
-            layers = <NUM>;
+            layers = <BASE CMAK>;
             key-positions = <RM1 RM2>;
             bindings = <&kp LPAR>;
         };
         combo_rpar {
             timeout-ms = <50>;
-            layers = <NUM>;
+            layers = <BASE CMAK>;
             key-positions = <RM2 RM3>;
             bindings = <&kp RPAR>;
         };
-        combo_lbkt {
+        combo_lessthan {
             timeout-ms = <50>;
             layers = <NUM>;
-            key-positions = <RT1 RT2>;
+            key-positions = <RM1 RM2>;
+            bindings = <&kp LT>;
+        };
+        combo_greaterthan {
+            timeout-ms = <50>;
+            layers = <NUM>;
+            key-positions = <RM2 RM3>;
+            bindings = <&kp GT>;
+        };
+        combo_lbkt {
+            timeout-ms = <50>;
+            layers = <BASE CMAK>;
+            key-positions = <RB1 RB2>;
             bindings = <&kp LBKT>;
         };
         combo_rbkt {
             timeout-ms = <50>;
-            layers = <NUM>;
-            key-positions = <RT2 RT3>;
+            layers = <BASE CMAK>;
+            key-positions = <RB2 RB3>;
             bindings = <&kp RBKT>;
         };
         combo_lbrc {
