@@ -131,8 +131,6 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = < KEYS_L KEYS_R THUMBS >; // List of keys on the right side of the keyboard
-            hold-trigger-on-release;
         };
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
@@ -142,8 +140,6 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = < KEYS_L THUMBS >; // List of keys on the left side of the keyboard
-            hold-trigger-on-release;
         };
         mlt: mouse_layer_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -219,13 +215,13 @@
             timeout-ms = <50>;
             layers = <NUM>;
             key-positions = <RM1 RM2>;
-            bindings = <&lpar_ht 0 LPAR>;
+            bindings = <&kp LPAR>;
         };
         combo_rpar {
             timeout-ms = <50>;
             layers = <NUM>;
             key-positions = <RM2 RM3>;
-            bindings = <&rpar_ht 0 RPAR>;
+            bindings = <&kp RPAR>;
         };
         combo_lbkt {
             timeout-ms = <50>;
