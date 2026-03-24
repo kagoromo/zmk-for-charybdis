@@ -102,6 +102,7 @@
 #define SYS     9
 #define SCROLL  10
 #define SNIPE   11
+#define AUTOM   12
 #define XXX     &none
 #define ___     &trans
 
@@ -124,9 +125,9 @@
             if-layers = <SYM NUM>;
             then-layer = <SYS>;
         };
-        snipe {
+        tri_layer_scroll {
             if-layers = <NUM FN>;
-            then-layer = <SNIPE>;
+            then-layer = <SCROLL>;
         };
     };
 
@@ -192,6 +193,12 @@
             require-prior-idle-ms = <150>;
             key-positions = <LM1 RM1>;
             bindings = <&caps_word>;
+        };
+        combo_tog_snipe {
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            key-positions = <LH1 LH2>;
+            bindings = <&tog SNIPE>;
         };
         combo_bspc {
             timeout-ms = <50>;
@@ -275,7 +282,7 @@ XXX             &kp Q           &kp W           &kp E           &kp R           
 XXX             &hm LGUI A      &hm LALT S      &hm LCTRL D     &hm LSHFT F     &kp G           &kp H           &hm RSHFT J     &hm RCTRL K    &hm LALT L      &hm RGUI P       XXX
 XXX             &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA      &kp DOT         &kp FSLH         XXX
                                                 &lt FN ESC      &lt NUM SPACE   &lt SYM TAB     &lt MEDIA RET   &lt NAV BSPC
-                                              &mlt SCROLL LCLK  &mlt SNIPE RCLK                 XXX
+                                                XXX             &tog SNIPE                      XXX
             >;
         };
 
@@ -286,7 +293,7 @@ XXX             &kp Q           &kp W           &kp F           &kp P           
 XXX             &hm LGUI A      &hm LALT R      &hm LCTRL S     &hm LSHFT T     &kp G           &kp M           &hm RSHFT N     &hm RCTRL E     &hm LALT I      &hm RGUI O      XXX
 XXX             &kp Z           &kp X           &kp C           &kp D           &kp V           &kp K           &kp H           &kp COMMA       &kp DOT         &kp FSLH        XXX
                                                 &lt FN ESC      &lt NUM SPACE   &lt SYM TAB     &lt MEDIA RET   &lt NAV BSPC
-                                                &mkp LCLK       &mkp RCLK                       XXX
+                                                XXX             &tog SNIPE                      XXX
             >;
         };
 
@@ -393,7 +400,18 @@ ___             ___             ___             ___             ___             
             bindings = <
 ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___
 ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___
-___             &mo SCROLL      &mkp MCLK       &mkp LCLK       &mkp RCLK       ___             ___             ___             ___             ___             ___             ___
+___             ___             &mkp MCLK       &mkp LCLK       &mkp RCLK       ___             ___             ___             ___             ___             ___             ___
+___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___
+                                                ___             ___             ___             ___             ___
+                                                ___             ___                             ___
+            >;
+        };
+
+        automouse {
+            bindings = <
+___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___
+___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___
+___             ___             &mkp MCLK       &mkp LCLK       &mkp RCLK       ___             ___             ___             ___             ___             ___             ___
 ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___
                                                 ___             ___             ___             ___             ___
                                                 ___             ___                             ___
