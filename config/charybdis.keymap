@@ -124,6 +124,10 @@
             if-layers = <SYM NUM>;
             then-layer = <SYS>;
         };
+        snipe {
+            if-layers = <NUM FN>;
+            then-layer = <SNIPE>;
+        };
     };
 
     behaviors {
@@ -388,8 +392,8 @@ ___             ___             ___             ___             ___             
         snipe {
             bindings = <
 ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___
-___             ___             &mkp MCLK       &mkp LCLK       &mkp RCLK       ___             ___             ___             ___             ___             ___             ___
 ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___
+___             &mo SCROLL      &mkp MCLK       &mkp LCLK       &mkp RCLK       ___             ___             ___             ___             ___             ___             ___
 ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___             ___
                                                 ___             ___             ___             ___             ___
                                                 ___             ___                             ___
