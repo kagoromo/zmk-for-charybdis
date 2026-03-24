@@ -744,8 +744,6 @@ layers:
 combos:
 - p: [28, 31]
   k: CAPS WORD
-- p: [49, 48]
-  k: {t: snipe, h: toggle}
 - p: [19, 20]
   k: BSPC
   l: [base, cmak]
