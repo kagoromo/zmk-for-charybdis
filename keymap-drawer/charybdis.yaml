@@ -55,7 +55,7 @@ layers:
   - {t: RET, h: media}
   - {t: BSPC, h: nav}
   - ''
-  - '&tog_sys'
+  - '&mo_sys'
   - ''
   cmak:
   - ''
@@ -112,7 +112,7 @@ layers:
   - {t: RET, h: media}
   - {t: BSPC, h: nav}
   - ''
-  - '&tog_sys'
+  - '&mo_sys'
   - ''
   nav:
   - ''
@@ -505,7 +505,7 @@ layers:
   - .
   - /
   - ''
-  - {t: ESC, h: fn}
+  - {t: ESC, h: '&mo_sys'}
   - SPACE
   - TAB
   - RET
