@@ -293,7 +293,7 @@ XXX,             XXX,            XXX,            XXX,            ___,           
 
         vanilla {
             bindings = <LAYER_ADAPTER(
-&kp TILDE,      &kp 1,          &kp 2,          &kp 3,          &kp 4,          &kp 5,                  &kp 6,          &kp 7,          &kp 8,          &kp 9,          &kp 0,          &kp BSPC,
+&kp TILDE,      &kp N1,         &kp N2,         &kp N3,         &kp N4,         &kp N5,                 &kp N6,         &kp N7,         &kp N8,         &kp N9,         &kp N0,         &kp BSPC,
 &kp LSHFT,      &kp Q,          &kp W,          &kp E,          &kp R,          &kp T,                  &kp Y,          &kp U,          &kp I,          &kp O,          &kp SQT,        &kp DEL,
 &kp LALT,       &kp A,          &kp S,          &kp D,          &kp F,          &kp G,                  &kp H,          &hm RSHIFT J,   &hm LCTRL K,    &hm LALT L,     &hm LGUI P,     XXX,
 &kp LCTRL,      &kp Z,          &kp X,          &kp C,          &kp V,          &kp B,                  &kp N,          &kp M,          &kp COMMA,      &kp DOT,        &kp FSLH,       XXX,
