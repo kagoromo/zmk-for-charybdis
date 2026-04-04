@@ -93,11 +93,21 @@
                         <&macro_pause_for_release>,
                         <&macro_release &kp LCTRL &kp LALT>;
         };
-        tog_sys: toggle_sys_macro {
+        mo_sys: mo_sys_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp S &kp Y &kp S &kp SPACE &kp L &kp A &kp Y &kp E &kp R>,
-                        <&tog SYS>;
+                        <&macro_press &mo SYM &mo NUM>,
+                        <&macro_pause_for_release>,
+                        <&macro_release &mo SYM &mo NUM>;
+        };
+        mst: mo_sys_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&mo_sys>, <&kp>;
         };
     };
 };
@@ -200,7 +210,7 @@ XXX,            &kp Q,          &kp W,          &kp E,          &kp R,          
 XXX,            &hm LGUI A,     &hm LALT S,     &hm LCTRL D,    &hm LSHFT F,    &kp G,                  &kp H,          &hm RSHFT J,    &hm RCTRL K,    &hm LALT L,     &hm RGUI P,     XXX,
 XXX,            &kp Z,          &kp X,          &kp C,          &kp V,          &kp B,                  &kp N,          &kp M,          &kp COMMA,      &kp DOT,        &kp FSLH,       XXX,
 XXX,            XXX,            XXX,            &lt FN ESC,     &lt NUM SPACE,  &lt SYM TAB,            &lt MEDIA RET,  &lt NAV BSPC,   XXX,            XXX,            XXX,            XXX,
-XXX,            XXX,            XXX,            XXX,            XXX,            &tog_sys,               XXX,            XXX,            XXX,            XXX,            XXX,            XXX
+XXX,            XXX,            XXX,            XXX,            XXX,            &mo_sys,                XXX,            XXX,            XXX,            XXX,            XXX,            XXX
             )>;
         };
 
@@ -211,7 +221,7 @@ XXX,            &kp Q,          &kp W,          &kp F,          &kp P,          
 XXX,            &hm LGUI A,     &hm LALT R,     &hm LCTRL S,    &hm LSHFT T,    &kp G,                  &kp M,          &hm RSHFT N,    &hm RCTRL E,    &hm LALT I,     &hm RGUI O,     XXX,
 XXX,            &kp Z,          &kp X,          &kp C,          &kp D,          &kp V,                  &kp K,          &kp H,          &kp COMMA,      &kp DOT,        &kp FSLH,       XXX,
 XXX,            XXX,            XXX,            &lt FN ESC,     &lt NUM SPACE,  &lt SYM TAB,            &lt MEDIA RET,  &lt NAV BSPC,   XXX,            XXX,            XXX,            XXX,
-XXX,            XXX,            XXX,            XXX,            XXX,            &tog_sys,               XXX,            XXX,            XXX,            XXX,            XXX,            XXX
+XXX,            XXX,            XXX,            XXX,            XXX,            &mo_sys,               XXX,            XXX,            XXX,            XXX,            XXX,            XXX
             )>;
         };
 
@@ -287,7 +297,7 @@ XXX,             XXX,            XXX,            XXX,            ___,           
 &kp LSHFT,      &kp Q,          &kp W,          &kp E,          &kp R,          &kp T,                  &kp Y,          &kp U,          &kp I,          &kp O,          &kp SQT,        &kp DEL,
 &kp LALT,       &kp A,          &kp S,          &kp D,          &kp F,          &kp G,                  &kp H,          &hm RSHIFT J,   &hm LCTRL K,    &hm LALT L,     &hm LGUI P,     XXX,
 &kp LCTRL,      &kp Z,          &kp X,          &kp C,          &kp V,          &kp B,                  &kp N,          &kp M,          &kp COMMA,      &kp DOT,        &kp FSLH,       XXX,
-XXX,            XXX,            XXX,            &lt FN ESC,     &kp SPACE,      &kp TAB,                &kp RET,        &kp BSPC,       XXX,            XXX,            XXX,            XXX,
+XXX,            XXX,            XXX,            &mst 0 ESC,     &kp SPACE,      &kp TAB,                &kp RET,        &kp BSPC,       XXX,            XXX,            XXX,            XXX,
 XXX,            XXX,            XXX,            XXX,            ___,            ___,                    XXX,            XXX,            XXX,            XXX,            XXX,            XXX
             )>;
         };
