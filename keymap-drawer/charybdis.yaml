@@ -54,8 +54,8 @@ layers:
   - {t: TAB, h: sym}
   - {t: RET, h: media}
   - {t: BSPC, h: nav}
-  - ''
-  - '&mo_sys'
+  - L CLK
+  - R CLK
   - ''
   cmak:
   - ''
@@ -111,8 +111,8 @@ layers:
   - {t: TAB, h: sym}
   - {t: RET, h: media}
   - {t: BSPC, h: nav}
-  - ''
-  - '&mo_sys'
+  - L CLK
+  - R CLK
   - ''
   nav:
   - ''
@@ -303,7 +303,7 @@ layers:
   - M CLK
   - L CLK
   - R CLK
-  - ''
+  - BSPC
   - '['
   - '7'
   - '8'
@@ -315,7 +315,7 @@ layers:
   - LALT
   - LCTRL
   - LSHFT
-  - ''
+  - DEL
   - '='
   - '4'
   - '5'
