@@ -1,19 +1,6 @@
 layout: {zmk_keyboard: skeletyl}
 layers:
   base:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - Q
   - W
   - E
@@ -24,8 +11,6 @@ layers:
   - I
   - O
   - ''''
-  - ''
-  - ''
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
@@ -36,8 +21,6 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: LALT}
   - {t: P, h: RGUI}
-  - ''
-  - ''
   - Z
   - X
   - C
@@ -48,29 +31,13 @@ layers:
   - ','
   - .
   - /
-  - ''
   - {t: ESC, h: fn}
   - {t: SPACE, h: num}
   - {t: TAB, h: sym}
   - {t: RET, h: media}
   - {t: BSPC, h: nav}
-  - L CLK
-  - R CLK
   - ''
   cmak:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - Q
   - W
   - F
@@ -81,8 +48,6 @@ layers:
   - U
   - Y
   - ''''
-  - ''
-  - ''
   - {t: A, h: LGUI}
   - {t: R, h: LALT}
   - {t: S, h: LCTRL}
@@ -93,8 +58,6 @@ layers:
   - {t: E, h: RCTRL}
   - {t: I, h: LALT}
   - {t: O, h: RGUI}
-  - ''
-  - ''
   - Z
   - X
   - C
@@ -105,37 +68,19 @@ layers:
   - ','
   - .
   - /
-  - ''
   - {t: ESC, h: fn}
   - {t: SPACE, h: num}
   - {t: TAB, h: sym}
   - {t: RET, h: media}
   - {t: BSPC, h: nav}
-  - L CLK
-  - R CLK
   - ''
   nav:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - PG UP
   - HOME
   - UP
   - END
   - BSPC
   - INS
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -150,8 +95,6 @@ layers:
   - RCTRL
   - LALT
   - RGUI
-  - ''
-  - ''
   - Ctl+ Z
   - Ctl+ X
   - Ctl+ C
@@ -162,31 +105,13 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   mouse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -207,8 +132,6 @@ layers:
   - RCTRL
   - LALT
   - RGUI
-  - ''
-  - ''
   - Ctl+ Z
   - Ctl+ X
   - Ctl+ C
@@ -219,34 +142,16 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - M CLK
   - L CLK
   - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   media:
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - VOL UP
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -274,31 +179,13 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
   - MUTE
   - PP
   - STOP
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   num:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - M CLK
   - L CLK
@@ -309,8 +196,6 @@ layers:
   - '8'
   - '9'
   - ']'
-  - ''
-  - ''
   - LGUI
   - LALT
   - LCTRL
@@ -321,8 +206,6 @@ layers:
   - '5'
   - '6'
   - ;
-  - ''
-  - ''
   - Ctl+ Z
   - Ctl+ X
   - Ctl+ C
@@ -333,29 +216,13 @@ layers:
   - '2'
   - '3'
   - '`'
-  - ''
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - '-'
   - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
   sym:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -366,8 +233,6 @@ layers:
   - '*'
   - (
   - '}'
-  - ''
-  - ''
   - LGUI
   - LALT
   - LCTRL
@@ -380,8 +245,6 @@ layers:
   - ':'
   - ''
   - ''
-  - ''
-  - ''
   - Gui+ SPACE
   - Ctl+ SPACE
   - Alt+ Z
@@ -390,29 +253,13 @@ layers:
   - '@'
   - '#'
   - '~'
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - _
   - .
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
   fn:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -423,8 +270,6 @@ layers:
   - F8
   - F9
   - )
-  - ''
-  - ''
   - LGUI
   - LALT
   - LCTRL
@@ -440,36 +285,18 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
   - SLCK
   - F1
   - F2
   - F3
   - F10
-  - ''
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - TAB
   - SPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
   vanilla:
-  - '~'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - BSPC
-  - LSHFT
   - Q
   - W
   - E
@@ -480,8 +307,6 @@ layers:
   - I
   - O
   - ''''
-  - DEL
-  - LALT
   - A
   - S
   - D
@@ -492,8 +317,6 @@ layers:
   - {t: K, h: LCTRL}
   - {t: L, h: LALT}
   - {t: P, h: LGUI}
-  - ''
-  - LCTRL
   - Z
   - X
   - C
@@ -504,29 +327,13 @@ layers:
   - ','
   - .
   - /
-  - ''
   - {t: ESC, h: '&mo_sys'}
   - SPACE
   - TAB
   - RET
   - BSPC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
   sys:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -537,16 +344,12 @@ layers:
   - {t: vanilla, h: toggle}
   - ''
   - ''
-  - ''
-  - ''
   - BT CLR ALL
   - ''
   - ''
   - ''
   - BOOT LDR
   - BOOT LDR
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -562,11 +365,8 @@ layers:
   - ''
   - ZMK Studio
   - ''
-  - ''
   - {type: held}
   - {type: held}
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -581,27 +381,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -628,35 +408,35 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [28, 31]
+- p: [13, 16]
   k: CAPS WORD
-- p: [19, 20]
+- p: [6, 7]
   k: BSPC
   l: [base, cmak]
-- p: [20, 21]
+- p: [7, 8]
   k: DEL
   l: [base, cmak]
-- p: [31, 32]
+- p: [16, 17]
   k: {t: (, h: '&lpar_hold_macro'}
   l: [base, cmak]
-- p: [32, 33]
+- p: [17, 18]
   k: {t: ), h: '&rpar_hold_macro'}
   l: [base, cmak]
-- p: [31, 32]
+- p: [16, 17]
   k: <
   l: [num]
-- p: [32, 33]
+- p: [17, 18]
   k: '>'
   l: [num]
-- p: [43, 44]
+- p: [26, 27]
   k: '['
   l: [base, cmak]
-- p: [44, 45]
+- p: [27, 28]
   k: ']'
   l: [base, cmak]
-- p: [43, 44]
+- p: [26, 27]
   k: '{'
   l: [num]
-- p: [44, 45]
+- p: [27, 28]
   k: '}'
   l: [num]
