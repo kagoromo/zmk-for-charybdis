@@ -111,6 +111,13 @@
             quick-tap-ms = <200>;
             bindings = <&mo_sys>, <&kp>;
         };
+        ime: ime_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>,
+                       <&macro_tap &kp GRAVE>,
+                       <&macro_release &kp LALT>;
+        };
     };
 };
 
@@ -263,7 +270,7 @@ XXX,            XXX,            XXX,            XXX,            ___,            
         num {
             bindings = <LAYER_ADAPTER(
 XXX,            XXX,            XXX,            XXX,            XXX,            XXX,                    XXX,           XXX,            XXX,            XXX,            XXX,           XXX,
-XXX,            XXX,            &mkp MCLK,      &mkp LCLK,      &mkp RCLK,      &kp BSPC,               &kp LBKT,      &kp N7,         &kp N8,         &kp N9,         &kp RBKT,      XXX,
+XXX,            &ime,           &mkp MCLK,      &mkp LCLK,      &mkp RCLK,      &kp BSPC,               &kp LBKT,      &kp N7,         &kp N8,         &kp N9,         &kp RBKT,      XXX,
 XXX,            &kp LGUI,       &kp LALT,       &kp LCTRL,      &kp LSHFT,      &kp DEL,                &kp EQUAL,     &kp N4,         &kp N5,         &kp N6,         &kp SEMI,      XXX,
 XXX,            &kp LC(Z),      &kp LC(X),      &kp LC(C),      &kp LC(V),      &kp LC(Y),              &kp BSLH,      &kp N1,         &kp N2,         &kp N3,         &kp GRAVE,     XXX,
 XXX,            XXX,            XXX,            ___,            ___,            ___,                    &kp MINUS,     &kp N0,         XXX,            XXX,            XXX,           XXX,

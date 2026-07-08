@@ -186,7 +186,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   num:
-  - ''
+  - '&ime'
   - M CLK
   - L CLK
   - R CLK
