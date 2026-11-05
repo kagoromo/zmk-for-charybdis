@@ -1,0 +1,13 @@
+file_format: "1"
+id: charybdis_mini
+name: Charybdis Mini
+type: shield
+url: https://github.com/Bastardkb/Charybdis/
+requires: [pro_micro]
+features:
+  - keys
+  - pointer
+  - underglow
+siblings:
+  - charybdis_mini_left
+  - charybdis_mini_right
