@@ -8,6 +8,8 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: DoctorWangWang
       url-base: https://github.com/DoctorWangWang
+    - name: ykiewang
+      url-base: https://github.com/ykiewang
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,5 +17,8 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: DoctorWangWang
       revision: main
+    - name: zmk-keybeacon
+      remote: ykiewang
+      revision: v1.2.0
   self:
     path: config
