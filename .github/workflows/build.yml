@@ -1,7 +1,11 @@
 name: Build ZMK firmware
 on:
   push:
+    branches:
+      - zmk-studio
   pull_request:
+    branches:
+      - zmk-studio
   workflow_dispatch:
   schedule:
     - cron: '0 0 1 */2 *' # run every two months to keep artifacts from expiring
