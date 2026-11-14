@@ -13,21 +13,33 @@
 #
 ---
 include:
-  - board: nice_nano@2.0.0//zmk
-    shield: skeletyl_left
-  - board: nice_nano@2.0.0//zmk
-    shield: skeletyl_right
-  - board: nice_nano@2.0.0//zmk
-    shield: charybdis_mini_left
-  - board: nice_nano@2.0.0//zmk
-    shield: charybdis_mini_right
-  - board: nice_nano@2.0.0//zmk
-    shield: charybdis_right
-  - board: nice_nano@2.0.0//zmk
-    shield: charybdis_left
-  - board: nice_nano@2.0.0//zmk
-    shield: charybdis_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  # # Skeletyl
+  # - board: nice_nano@2.0.0//zmk
+  #   shield: skeletyl_left
+  # - board: nice_nano@2.0.0//zmk
+  #   shield: skeletyl_right
+  # - board: nice_nano@2.0.0//zmk # with studio support
+  #   shield: skeletyl_right
+  #   snippet: studio-rpc-usb-uart
+  #   cmake-args: -DCONFIG_ZMK_STUDIO=y
+  # # Charybdis Mini
+  # - board: nice_nano@2.0.0//zmk
+  #   shield: charybdis_mini_left
+  # - board: nice_nano@2.0.0//zmk
+  #   shield: charybdis_mini_right
+  # - board: nice_nano@2.0.0//zmk # with studio support
+  #   shield: charybdis_mini_right
+  #   snippet: studio-rpc-usb-uart
+  #   cmake-args: -DCONFIG_ZMK_STUDIO=y
+  # # Charybdis
+  # - board: nice_nano@2.0.0//zmk
+  #   shield: charybdis_right
+  # - board: nice_nano@2.0.0//zmk
+  #   shield: charybdis_left
+  # - board: nice_nano@2.0.0//zmk # with studio support
+  #   shield: charybdis_right
+  #   snippet: studio-rpc-usb-uart
+  #   cmake-args: -DCONFIG_ZMK_STUDIO=y
+  # Settings Reset
   - board: nice_nano@2.0.0//zmk
     shield: settings_reset
